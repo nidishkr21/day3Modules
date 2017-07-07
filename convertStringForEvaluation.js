@@ -1,7 +1,7 @@
-module.exports={
-  fullConvertion:function(itemList){
+
+  export function fullConvertion(itemList){
     var n=itemList.length;
-    variableToStoreTheValue=[];
+    var variableToStoreTheValue=[];
     for(var i=0;i<n;i++)
     { 
       variableToStoreTheValue[i]=itemList[i].toLowerCase();
@@ -9,4 +9,3 @@ module.exports={
     }
     return variableToStoreTheValue;
   }
-}

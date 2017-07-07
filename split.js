@@ -1,9 +1,9 @@
-module.exports={
-  cut:function(itemList,stringToSplit,w)
+
+  export function cut(itemList,stringToSplit,w)
   { var n=itemList.length;
       if(w==1)
     { itemList=`${itemList}`;
-      variableInWhichToStoreTheValue=itemList.split(stringToSplit);
+      var variableInWhichToStoreTheValue=itemList.split(stringToSplit);
       return variableInWhichToStoreTheValue;
     }
     else{
@@ -16,4 +16,3 @@ module.exports={
       return variableInWhichToStoreTheValue;
     } 
   }
-}

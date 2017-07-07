@@ -1,5 +1,5 @@
-module.exports={
-  individualTax:function(priceOfProduct,totalTaxPercentage,variableInWhichToStoreTheValue)
+
+  export function individualTax(priceOfProduct,totalTaxPercentage,variableInWhichToStoreTheValue)
   { var n=priceOfProduct.length;
     for(var i=0;i<n;i++)
     { 
@@ -7,9 +7,9 @@ module.exports={
       variableInWhichToStoreTheValue[i]=Math.round(variableInWhichToStoreTheValue[i]*20)/20;
     }
     return variableInWhichToStoreTheValue;
-  },
+  }
 
-  priceAfterTax:function(priceOfProduct,individualTax,variableInWhichToStoreTheValue)
+  export function priceAfterTax(priceOfProduct,individualTax,variableInWhichToStoreTheValue)
   {
     var n=priceOfProduct.length;
     for(var i=0;i<n;i++)
@@ -17,13 +17,12 @@ module.exports={
       variableInWhichToStoreTheValue[i]=priceOfProduct[i]+individualTax[i];
     }
     return variableInWhichToStoreTheValue;
-  },
+  }
 
-  sumArray:function(arrayForSum,variableInWhichToStoreTheValue)
+  export function sumArray(arrayForSum,variableInWhichToStoreTheValue)
   {
     variableInWhichToStoreTheValue=arrayForSum.reduce(function(previousVal,currentVal){
       return previousVal+currentVal
     });
     return variableInWhichToStoreTheValue;
   }
-}

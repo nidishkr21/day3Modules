@@ -1,10 +1,10 @@
-var cut=require("./split.js");
+import {cut} from './split';
 
-module.exports={
-  finalDisplay:function(itemList,priceArray,totalValue,totalTax,itemQuantity)
+
+  export function finalDisplay(itemList,priceArray,totalValue,totalTax,itemQuantity)
   {
     var a=[];
-    a=cut.cut(itemList," ",itemQuantity);
+    a=cut(itemList," ",itemQuantity);
     
     if(itemQuantity!=1){
       for(var i=0;i<itemQuantity;i++)
@@ -32,4 +32,3 @@ module.exports={
       console.log("Total  :" + totalValue);
     }
   }
-}

@@ -1,8 +1,6 @@
 var readlineSync= require('readline-sync');
 
-module.exports={
-
-  input:function(itemList){
+  export function input (itemList){
     var i=0;
     do{
       itemList[i]=readlineSync.question("What is item " + (i+1) + " ?\n");
@@ -12,4 +10,3 @@ module.exports={
     while(question=="Y"||question=="y");
     return itemList;
   }
-}

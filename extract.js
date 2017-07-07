@@ -1,11 +1,11 @@
-var cut=require("./split.js");
+import {cut} from './split';
 
-module.exports={
-  compextract:function(itemList,variableToStoreTheValue,lengthOfTheString)
+
+  export function compextract(itemList,variableToStoreTheValue,lengthOfTheString)
   { var n=itemList.length;
     var a=[];
    
-      a=cut.cut(itemList,"at",lengthOfTheString);
+      a=cut(itemList,"at",lengthOfTheString);
     
     for(var i=0;i<n;i++)
     { var m=a[i].length;
@@ -14,4 +14,3 @@ module.exports={
     }
     return variableToStoreTheValue;
   }
-}

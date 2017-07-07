@@ -1,5 +1,5 @@
-module.exports={
-  initialization:function(array,itemQuantity){
+
+  export function initialization(array,itemQuantity){
     var n=itemQuantity.length;
     for(var i=0;i<n;i++)
     {
@@ -7,4 +7,3 @@ module.exports={
     }
     return array;
   }
-}

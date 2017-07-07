@@ -1,5 +1,5 @@
-var master=require("./rs.js")
+import {fullTaxCal} from './rs';
 
 var item;
-master.fullTaxCal(item);
+fullTaxCal(item);
 

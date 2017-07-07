@@ -1,5 +1,5 @@
-module.exports={
-  searchImported:function(itemList,variableInWhichToStoreTheValue)
+
+  export function searchImported(itemList,variableInWhichToStoreTheValue)
   { var n=itemList.length;
     for(var i=0;i<n;i++)
     { 
@@ -10,9 +10,9 @@ module.exports={
       }
     }
     return variableInWhichToStoreTheValue;
-  },
+  }
 
-  searchExempted:function(itemList,variableInWhichToStoreTheValue)
+  export function searchExempted(itemList,variableInWhichToStoreTheValue)
   {
     var n=itemList.length;
     var exemptGoods=["book","chocolate","pills","medicine","medical","food","pill"]; 
@@ -35,4 +35,3 @@ module.exports={
     }
     return variableInWhichToStoreTheValue;
   }
-}

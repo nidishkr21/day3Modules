@@ -1,5 +1,5 @@
-module.exports={
-  test:function(arrayForLength)
+
+  export function test (arrayForLength)
     { if(arrayForLength==NaN)
       {
         return 1;
@@ -9,4 +9,4 @@ module.exports={
         return arrayForLength.length;
       }
     } 
-  }
+  
